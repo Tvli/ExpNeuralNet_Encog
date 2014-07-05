@@ -16,7 +16,7 @@ import sun.applet.Main;
 /**
  * Created by Teng on 01/07/2014.
  */
-public class Test {
+public class XOR {
     public static double XOR_INPUT[][] = {
             {0.0, 0.0},
             {1.0, 0.0},
@@ -53,7 +53,7 @@ public class Test {
             epoch++;
         }while (train.getError() > 0.01);
 
-//        Test Neural Net
+//        XOR Neural Net
         System.out.println("Neural network result:");
         for (MLDataPair pair: trainingSet){
             final MLData output = network.compute((MLData)pair.getInput());
